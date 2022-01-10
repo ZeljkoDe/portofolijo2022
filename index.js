@@ -2,11 +2,13 @@
 
 const clickMeBtn = document.querySelector('.js-click-me');
 
-clickMeBtn.addEventListener('click', function () {
-	this.classList.toggle('active');
+if (clickMeBtn) {
+	clickMeBtn.addEventListener('click', function () {
+		this.classList.toggle('active');
 
-	this.classList.contains('active') ? document.body.style.backgroundColor = 'white' : document.body.style.backgroundColor = 'black';
-});
+		this.classList.contains('active') ? document.body.style.backgroundColor = 'white' : document.body.style.backgroundColor = 'black';
+	});
+}
 // const animationObject = document.querySelector('.animation');
 
 // const scroll = () => {
