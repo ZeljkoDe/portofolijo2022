@@ -1,2 +1,16 @@
+// colors
 $black-color: hsl(0, 0%, 0%);
 $black-light-color: hsla(0, 0%, 0%, 0.6);
+
+// screen size variable map for the respond-to mixin
+$breakpoints: (
+	"screen-sm": (
+		max-width: 768px,
+	),
+	"screen-md": (
+		max-width: 992px,
+	),
+	"screen-lg": (
+		max-width: 1200px,
+	),
+);
