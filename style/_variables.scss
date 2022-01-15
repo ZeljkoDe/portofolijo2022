@@ -1,3 +1,13 @@
+@use "fonts";
+
+// fonts
+$font-default: serif;
+$font-regular: "Playfair-Regular", $font-default;
+$font-regular-italic: "Playfair-RegularItalic", $font-default;
+$font-medium: "Playfair-Medium", $font-default;
+$font-medium-italic: "Playfair-MediumItalic", $font-default;
+$font-bold: "Playfair-Bold", $font-default;
+
 // colors
 $black-color: hsl(0, 0%, 0%);
 $black-light-color: hsla(0, 0%, 0%, 0.6);
