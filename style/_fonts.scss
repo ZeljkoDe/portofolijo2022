@@ -1,20 +1,21 @@
 @font-face {
 	font-family: "Playfair-Regular";
-	src: url("../assets/fonts/PlayfairDisplay-Regular.ttf");
+	src: url("../assets/fonts/PlayfairDisplay-Regular.ttf") format(ttf);
 }
 @font-face {
 	font-family: "Playfair-RegularItalic";
-	src: url("../assets/fonts/PlayfairDisplay-Italic.ttf");
+	src: url("../assets/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
 }
 @font-face {
 	font-family: "Playfair-Medium";
-	src: url("../assets/fonts/PlayfairDisplay-Medium.ttf");
+	src: url("../assets/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
 }
 @font-face {
 	font-family: "Playfair-MediumItalic";
-	src: url("../assets/fonts/PlayfairDisplay-MediumItalic.ttf");
+	src: url("../assets/fonts/PlayfairDisplay-MediumItalic.ttf")
+		format("truetype");
 }
 @font-face {
 	font-family: "Playfair-Bold";
-	src: url("../assets/fonts/PlayfairDisplay-Bold.ttf");
+	src: url("../assets/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
 }
