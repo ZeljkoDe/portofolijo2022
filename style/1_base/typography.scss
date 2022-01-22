@@ -1,0 +1,9 @@
+@use "../0_abstracts" as *;
+
+body {
+	font-family: $font-regular;
+}
+
+h1 {
+	font-family: $font-medium-italic;
+}

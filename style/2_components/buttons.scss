@@ -1,0 +1,6 @@
+@use "../0_abstracts/" as *;
+
+button {
+	font-family: $font-regular;
+	background: #000;
+}

@@ -1,5 +1,4 @@
-@use "fonts";
-
+@forward "fonts";
 // fonts
 $font-default: serif;
 $font-regular: "Playfair-Regular", $font-default;
