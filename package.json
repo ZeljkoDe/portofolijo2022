@@ -7,10 +7,14 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "live-server": "^1.1.0",
     "sass": "^1.46.0"
   },
   "scripts": {
-    "start": "concurrently \"sass --watch style/style.scss style.css\" \"npx live-server\""
+    "live_server": "npx live-server"
   }
 }

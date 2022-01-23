@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "gulp: watch_scss",
+			"type": "gulp",
+			"task": "watch_scss",
+			"presentation": {
+				"group": "dev"
+			}
+		},
+		{
+			"label": "npm: live_server",
+			"type": "npm",
+			"script": "live_server",
+			"presentation": {
+				"group": "dev"
+			}
+		},
+		{
+			"label": "start:dev",
+			"dependsOn": [
+				"gulp: watch_scss",
+				"npm: live_server"
+			],
+			"presentation": {
+				"reveal": "silent"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+		}
+	]
+}
