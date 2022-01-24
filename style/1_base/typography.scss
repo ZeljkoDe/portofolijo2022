@@ -1,9 +1,22 @@
 @use "../0_abstracts" as *;
 
 body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 	font-family: $font-regular;
+	background: $black-color;
+
+	&.white__magic {
+		transition: background 2s ease-in-out;
+		background: $white-color;
+	}
 }
 
 h1 {
 	font-family: $font-medium-italic;
+	color: $white-color;
+	text-align: center;
 }

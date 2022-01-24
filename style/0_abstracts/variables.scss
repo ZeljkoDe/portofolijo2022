@@ -8,8 +8,8 @@ $font-medium-italic: "Playfair-MediumItalic", $font-default;
 $font-bold: "Playfair-Bold", $font-default;
 
 // colors
-$black-color: hsl(0, 0%, 0%);
-$black-light-color: hsla(0, 0%, 0%, 0.6);
+$black-color: #0c090a;
+$white-color: #ffffff;
 
 // screen size variable map for the respond-to mixin
 $breakpoints: (

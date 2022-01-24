@@ -1,0 +1,21 @@
+@use "../0_abstracts" as *;
+
+.magic {
+	font-family: $font-medium-italic;
+	font-size: 3rem;
+	text-transform: uppercase;
+	transition: opacity 10s ease;
+	color: $white-color;
+	animation: isItBigEnough 5s ease-in-out 2s;
+}
+
+@keyframes isItBigEnough {
+	from {
+		font-size: 3rem;
+		text-shadow: 0 0 0 $white-color;
+	}
+	to {
+		font-size: 80rem;
+		text-shadow: 2px 2px 50px $white-color;
+	}
+}

@@ -15,6 +15,7 @@
     "sass": "^1.46.0"
   },
   "scripts": {
-    "live_server": "npx live-server"
+    "live_server": "npx live-server",
+    "watch": "npx gulp watch_scss"
   }
 }
