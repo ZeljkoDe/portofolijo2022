@@ -1,19 +1,26 @@
 "use strict";
 
 // const hiddenWorld = document.querySelector('.hidden_world');
-const playArea = document.querySelector('body');
 const turnMeOn = document.querySelector('.switch');
+const playArea = document.querySelector('body');
 
-const theBeginingOfItAll = () => {
-	playArea.classList.add('white__magic');
-};
+const conjure = {
+	playArea: playArea,
 
-const zigibigul = function () {
-	console.log(this);
-	this.classList.toggle('off');
+	theBeginingOfItAll: () => {
+		conjure.playArea.classList.add('white__magic');
+	},
+	theEndOfItAll: () => {
+		conjure.playArea.classList.remove('white__magic');
+	},
+
+	teaseMe() {
+		this.classList.toggle('off');
+		this.classList.contains('off') ? conjure.theBeginingOfItAll() : conjure.theEndOfItAll();
+	}
 };
 
 // hiddenWorld.addEventListener('mouseenter', theBeginingOfItAll);
-turnMeOn.addEventListener('click', zigibigul);
+turnMeOn.addEventListener('click', conjure.teaseMe);
 
 console.log('test');

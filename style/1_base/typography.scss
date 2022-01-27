@@ -7,10 +7,10 @@ body {
 	align-items: center;
 	overflow: hidden;
 	font-family: $font-regular;
-	// background: $black-color;
+	background: $black-color;
+	transition: background 2s ease-in-out;
 
 	&.white__magic {
-		transition: background 2s ease-in-out;
 		background: $white-color;
 	}
 }
