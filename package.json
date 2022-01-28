@@ -6,16 +6,11 @@
   "author": "Zeljko Damnjanovic",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^7.0.0",
+    "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "live-server": "^1.1.0",
     "sass": "^1.46.0"
-  },
-  "scripts": {
-    "live_server": "npx live-server",
-    "watch": "npx gulp watch_scss"
   }
 }
