@@ -2,16 +2,17 @@
 
 body {
 	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
+	width: 100vw;
 	font-family: $font-regular;
 	background: $black-color;
+	overflow: hidden;
 	transition: background 2s ease-in-out;
+	width: calc(100vw - 20px);
+	scroll-behavior: smooth;
 
 	&.white__magic {
 		background: $white-color;
+		overflow: visible;
 	}
 }
 
@@ -19,4 +20,8 @@ h1 {
 	font-family: $font-medium-italic;
 	color: $white-color;
 	text-align: center;
+}
+
+section {
+	height: 100vh;
 }

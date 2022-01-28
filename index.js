@@ -12,6 +12,13 @@ const conjure = {
 	},
 	theEndOfItAll: () => {
 		conjure.playArea.classList.remove('white__magic');
+		conjure.scrollTo('top');
+	},
+
+	scrollTo: (x) => {
+		if (x == 'top') {
+			window.scrollTo(0, 0);
+		}
 	},
 
 	teaseMe() {
@@ -22,5 +29,3 @@ const conjure = {
 
 // hiddenWorld.addEventListener('mouseenter', theBeginingOfItAll);
 turnMeOn.addEventListener('click', conjure.teaseMe);
-
-console.log('test');
