@@ -10,3 +10,11 @@
 		text-shadow: 2px 2px 50px $white-color;
 	}
 }
+
+@keyframes move {
+	to {
+		offset-distance: 100%;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}

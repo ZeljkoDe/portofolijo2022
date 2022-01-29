@@ -8,18 +8,47 @@ body {
 	overflow: hidden;
 	transition: background 2s ease-in-out;
 	width: calc(100vw - 20px);
-	scroll-behavior: smooth;
 
 	&.white__magic {
 		background: $white-color;
-		overflow: visible;
+		overflow: hidden scroll;
 	}
 }
 
 h1 {
-	font-family: $font-medium-italic;
-	color: $white-color;
 	text-align: center;
+	font-size: 3rem;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 2px;
+		background: red;
+		transform: translate(-200vw, 3rem);
+		transition: transform 0.8s ease;
+	}
+
+	&:hover {
+		.obj {
+			animation-play-state: running;
+		}
+		&::after {
+			transform: translate(-100%, 3rem);
+		}
+	}
+	.obj {
+		display: inline-block;
+		offset-path: path("M -20 6s127.4 188 267.7 0 247.3 0 247.3 0");
+		offset-distance: 0;
+		animation: move 2s infinite alternate;
+		animation-play-state: paused;
+		width: 0.6rem;
+		height: 0.6rem;
+		border-radius: 50%;
+		background-color: lightskyblue;
+	}
 }
 
 section {
