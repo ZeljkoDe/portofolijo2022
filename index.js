@@ -7,18 +7,21 @@ const playArea = document.querySelector('body');
 const conjure = {
 	playArea: playArea,
 
-	theBeginingOfItAll: () => {
-		conjure.playArea.classList.add('white__magic');
-	},
-	theEndOfItAll: () => {
-		conjure.playArea.classList.remove('white__magic');
-		conjure.scrollTo('top');
+	theBeginingOfItAll() {
+		const offset = document.querySelector('#first').offsetTop;
+		this.playArea.classList.add('white__magic');
+		this.whereTo(offset);
 	},
 
-	scrollTo: (x) => {
-		if (x == 'top') {
-			window.scrollTo(0, 0);
-		}
+	theEndOfItAll() {
+		this.playArea.classList.remove('white__magic');
+		this.whereTo(0);
+	},
+
+	whereTo(position) {
+		window.scrollTo({
+			top: position
+		});
 	},
 
 	teaseMe() {

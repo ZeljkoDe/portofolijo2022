@@ -3,6 +3,11 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+	@supports (scrollbar-width: thin) {
+		scrollbar-width: thin;
+	}
 }
 
 /* Scrollbar restyling*/
