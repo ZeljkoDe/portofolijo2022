@@ -18,7 +18,7 @@ async function watch() {
 	});
 	gulp.watch('style/**/*.scss', compile_scss);
 	gulp.watch("*.html").on('change', browserSync.reload);
-	gulp.watch("*.js").on('change', browserSync.reload);
+	gulp.watch("js/*.js").on('change', browserSync.reload);
 };
 
 exports.compile_scss = compile_scss;
